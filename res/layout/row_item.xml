@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"    
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.2"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic" />
+
+        <EditText 
+	        android:id="@+id/idRowName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:layout_gravity="top|left"
+	        android:background="#ffffff"
+	        android:textColor="#000000"
+	        android:hint="name"
+	        android:padding="5dp"
+	        android:layout_marginRight="5dp"
+	        android:inputType="textMultiLine|textCapWords"	        
+	        />
+        
+        <ImageButton 
+	        android:id="@+id/idRowDel"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.1"
+	        android:layout_height="wrap_content"
+			android:background="@drawable/state_delete"    
+			android:src="@android:drawable/ic_menu_delete" 
+			android:layout_gravity="top|right"  
+	        />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:text="Qty"
+            android:textColor="#ffffff"
+            android:layout_marginRight="1dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic" />
+        <EditText 
+	        android:id="@+id/idRowQty"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.4"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|left"
+	        android:background="#ffffff"
+	        android:textColor="#000000"
+	        android:hint="Qty"
+	        android:padding="5dp"
+	        android:inputType="text|numberDecimal"
+	        />
+        <Space 
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:text="Price"
+            android:textColor="#ffffff"
+            android:layout_marginRight="1dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic" />
+        <EditText 
+	        android:id="@+id/idRowPrice"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.6"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|left"
+	        android:background="#ffffff"
+	        android:textColor="#000000"
+	        android:hint="price"
+	        android:padding="5dp"
+	        android:inputType="text|numberDecimal"
+	        />
+        <Space 
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+</LinearLayout>

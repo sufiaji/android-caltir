@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >   
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/idImgProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/ic_no_photo" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/idEditName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="Name"
+                android:ems="10" >
+            </EditText>
+            
+            <EditText
+                android:id="@+id/idEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:background="@color/gray"
+                android:textStyle="italic" >
+
+            </EditText>
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+	    android:id="@+id/idButCurNext"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/state_register"
+	    android:textColor="#ffffff"
+	    android:clickable="true"
+	    android:onClick="onSave"
+	    android:text="Save" />
+
+</RelativeLayout>

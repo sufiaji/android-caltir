@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginTop="100dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    >
+	    
+	    <Spinner
+		    android:id="@+id/idSpinTime"
+		    android:layout_width="0dp"
+		    android:layout_weight="0.6"
+		    android:layout_height="wrap_content"
+		    android:background="#ffffff"
+		    android:padding="10dp"
+		    android:layout_marginRight="20dp"
+		    android:entries="@array/str_time" />
+	    <Spinner
+		    android:id="@+id/idSpinHour"
+		    android:layout_width="0dp"
+		    android:layout_weight="0.4"
+		    android:layout_height="wrap_content"
+		    android:background="#ffffff"
+		    android:padding="10dp"
+		    android:entries="@array/str_hour" />
+	    
+	</LinearLayout>
+	    
+	<Button
+	    android:id="@+id/idButCurNext"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/state_register"
+	    android:textColor="#ffffff"
+	    android:clickable="true"
+	    android:onClick="onNext"
+	    android:text="Next" />
+	
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:alpha="0.7"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="Do you want to set reminder?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic|bold"
+        android:gravity="center" />
+	   
+</RelativeLayout>

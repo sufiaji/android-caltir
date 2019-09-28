@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+	
+	<TextView
+        android:id="@+id/idTitleAttach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attachment"
+        android:textStyle="bold|italic" />
+	
+	<RelativeLayout 
+	    android:layout_below="@+id/idTitleAttach"
+        android:layout_above="@+id/idLay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+	    >
+	    
+	    <ImageView
+	        android:id="@+id/idImgPic"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@+id/idDel"
+	        android:layout_marginBottom="5dp"	        
+	        android:src="@drawable/no_image" />
+
+	    <Button
+	        android:id="@+id/idDel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/state_delete"
+	        android:layout_alignParentBottom="true"
+	        android:clickable="true"
+	        android:onClick="onDel"
+	        android:padding="10dp"
+	        android:text="Delete"
+	        android:textColor="#ffffff" />
+
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/idLay1"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:layout_above="@+id/idNext"
+	    >
+	    <Button
+	        android:id="@+id/idCam"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@drawable/state_login"
+	        android:clickable="true"
+	        android:onClick="onCam"
+	        android:textColor="#ffffff"
+	        android:text="Take a photo"
+	        />
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:layout_marginLeft="3dp"
+	        android:background="@drawable/state_login"
+	        android:clickable="true"
+	        android:onClick="onPic"
+	        android:textColor="#ffffff"
+	        android:text="Existing picture"
+	        />
+	        
+	</LinearLayout>
+	
+	<Button
+        android:id="@+id/idNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/state_register"
+        android:clickable="true"
+        android:onClick="onNext"
+        android:text="Next" />
+
+</RelativeLayout>

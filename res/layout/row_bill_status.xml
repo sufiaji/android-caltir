@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="horizontal" >
+    
+	<TextView 
+	    android:id="@+id/idRowPerson"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:layout_weight="0.4"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+		android:background="#ffffff"
+		android:textColor="#000000"
+		android:padding="5dp"
+		android:singleLine="true"
+		android:text="NAME"
+	    />
+	<TextView 
+	    android:id="@+id/idRowStatus"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:layout_weight="0.2"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+		android:background="#ffffff"
+		android:textColor="#000000"
+		android:padding="5dp"
+		android:singleLine="true"
+		android:text="STATUS"
+	    />
+	<TextView 
+	    android:id="@+id/idRowPrice"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:layout_weight="0.4"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+		android:background="#ffffff"
+		android:textColor="#000000"
+		android:padding="5dp"
+		android:singleLine="true"
+		android:text="PRICE"
+	    />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/id_layout_row_people"
+    android:background="#ffffff"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" >
+    
+<LinearLayout 
+    android:id="@+id/id_layout_person"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    
+	<ImageView 
+	    android:id="@+id/idImgUser"
+	    android:layout_width="48dp"
+	    android:layout_height="48dp"
+	    android:background="@drawable/ic_no_photo" />
+	
+	<LinearLayout 
+	    android:gravity="center_vertical"
+	    android:orientation="vertical"	
+	    android:layout_marginLeft="10dp"  
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent" >
+
+		<TextView
+		    android:id="@+id/idName"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:textColor="#000"
+		    android:text="John Doe" />
+		
+		<TextView
+		    android:id="@+id/idEmail"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000"
+		    android:text="jdoe@id.ibm.com" />
+	</LinearLayout>
+	
+</LinearLayout>
+</LinearLayout>
