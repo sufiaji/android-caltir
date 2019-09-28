@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/idMenuAdd"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="Add Item" />
+    <item
+        android:id="@+id/idMenuCancel"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="Cancel" />
+
+</menu>

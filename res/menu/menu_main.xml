@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        
+    <item
+        android:id="@+id/idMenuRefresh"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:title="Refresh"
+        android:icon="@android:drawable/ic_popup_sync"/>
+    
+    <item
+        android:id="@+id/idMenuProfile"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile"/>
+    
+    <item
+        android:id="@+id/idMenuHelp"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:title="About/Help"
+        android:icon="@android:drawable/ic_menu_help"/>
+    
+    <item
+        android:id="@+id/idMenuLogout"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_delete"/>
+
+</menu>
