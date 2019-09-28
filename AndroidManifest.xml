@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gravitazi.android.caltir"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.VIBRATE" />	
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:protectionLevel="signature"
+    	android:name="com.gravitazi.android.caltir.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.gravitazi.android.caltir.permission.C2D_MESSAGE" />
+	
+	<uses-feature android:name="android.hardware.camera"
+                  android:required="false" />
+	
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcer"
+        android:label="@string/app_name"        
+        android:theme="@style/CustomActionBarTheme" android:name="CApp">
+        <activity
+            android:name="com.gravitazi.android.caltir.ASplash"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ALogin"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.AMain"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewSession"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.AProfile"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewCurr"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+           	android:name="com.gravitazi.android.caltir.main.ANewItem"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewAdditional"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+      		android:name="com.gravitazi.android.caltir.main.ANewShared"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+     		android:name="com.gravitazi.android.caltir.main.ANewBillTo"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewReminder"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewSummary"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.activities.ACDetailMain"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.activities.ACBillStatus"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.activities.ACSummaryPayment"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.AHelp"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewAttach"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.gravitazi.android.caltir.main.ANewTax"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+    	<activity
+    	    android:name="com.gravitazi.android.caltir.main.APicture"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+    	<!-- Push Notification Settings: Parse.com -->
+		<service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+		  <intent-filter>
+		    <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    <action android:name="android.intent.action.USER_PRESENT" />
+		  </intent-filter>
+		</receiver>
+		<receiver android:name="com.parse.GcmBroadcastReceiver"
+		    android:permission="com.google.android.c2dm.permission.SEND">
+		  <intent-filter>
+		    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+		    <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+		 
+		    <!--
+		      IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name.
+		    -->
+		    <category android:name="com.gravitazi.android.caltir" />
+		  </intent-filter>
+		</receiver>
+		<receiver android:name="com.gravitazi.android.caltir.models.CPushReceiver" android:exported="false">
+		  <intent-filter>
+		    <action android:name="com.parse.push.intent.RECEIVE" />
+		    <action android:name="com.parse.push.intent.DELETE" />
+		    <action android:name="com.parse.push.intent.OPEN" />
+		  </intent-filter>
+		</receiver>
+			
+    </application>
+
+</manifest>
